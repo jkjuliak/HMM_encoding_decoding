@@ -2,7 +2,7 @@ Practice project to display HMM maximum likelihood, encoding and decoding proble
 
 - MLE.py reads in an annotated training file passed through standard input command: $ python mle.py file_name.super
 - Test input file in the following format: strawberry 1; orange 2; blueberry 1; ... etc
-- Compatible with POS tagging, uses add-1 smoothing, <unk>s unknown emissions, works with an emission and transtition matrix
+- Compatible with POS tagging, uses add-1 smoothing, "unk"s unknown emissions, works with an emission and transtition matrix
 - Once model is created, it is saved to model.hmm
 
 - likelihood.py uses the produced model and an observation sequence (uses space delimited tokens as observations, e.g: 1 2 1) to determine the likelihood of the observations, read through stdin: $ python likelihood.py model.hmm test.seqs
