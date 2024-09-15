@@ -9,5 +9,5 @@ likelihood.py uses the produced model and an observation sequence (uses space de
 - Uses the forward and backward algorithm to determine the likelihood of the observed sequence
 - Once likelihoods are calculated, output is sent to hmm.likelihood
 
-decoding.py uses the hmm and an observation sequence, it finds the best hidden-state sequence, read through stdin: $ python model.hmm test.seqs
+decoding.py uses the hmm and an observation sequence, it finds the best hidden-state sequence, read through stdin: $ python decoding.py model.hmm test.seqs
 - Implements the Viterbi algorithm, best sequence and its log likelihood is saved to hmm.decoding
